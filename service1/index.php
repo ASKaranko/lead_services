@@ -62,7 +62,7 @@ if (!empty($_POST['phone'])) {
 
         // Google api start
 
-        $urlGS = 'https://script.google.com/macros/s/AKfycbwAKD-dnjGLSGsw9kvExLbrzG0K8JpPQrQWIlW4pIr0v4QY8eNa1sWtQKQW1XLRSwaB/exec';
+        $urlGS = 'https://script.google.com/macros/s/AKfycbyzbL3IC7rt9MLuhsynmMRH3GzKl08TSfOnp08l6rkcVN_YH89wqiK3wBcLtyzYF8dA/exec';
         $chGS = curl_init();
         curl_setopt($chGS, CURLOPT_URL, $urlGS);
         curl_setopt($chGS, CURLOPT_RETURNTRANSFER, 1);

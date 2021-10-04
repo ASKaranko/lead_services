@@ -27,7 +27,7 @@
 	} else header( "Location: success.php?" . http_build_query($result) );
 
 	// google apps start
-	$chGS = curl_init('https://script.google.com/macros/s/AKfycbwAKD-dnjGLSGsw9kvExLbrzG0K8JpPQrQWIlW4pIr0v4QY8eNa1sWtQKQW1XLRSwaB/exec');
+	$chGS = curl_init('https://script.google.com/macros/s/AKfycbyzbL3IC7rt9MLuhsynmMRH3GzKl08TSfOnp08l6rkcVN_YH89wqiK3wBcLtyzYF8dA/exec');
 
 	curl_setopt( $chGS, CURLOPT_RETURNTRANSFER, true );
 	curl_setopt( $chGS, CURLOPT_TIMEOUT, 30 );

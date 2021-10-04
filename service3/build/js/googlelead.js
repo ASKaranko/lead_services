@@ -15,7 +15,7 @@ for (let i = 0; i < forms.length; i++) {
 function sendData(form, ip) {
     const XHR = new XMLHttpRequest(),
     FD  = new FormData(form),
-    googleApiUrl = 'https://script.google.com/macros/s/AKfycbwAKD-dnjGLSGsw9kvExLbrzG0K8JpPQrQWIlW4pIr0v4QY8eNa1sWtQKQW1XLRSwaB/exec';
+    googleApiUrl = 'https://script.google.com/macros/s/AKfycbyzbL3IC7rt9MLuhsynmMRH3GzKl08TSfOnp08l6rkcVN_YH89wqiK3wBcLtyzYF8dA/exec';
 
     let country = null;
 
