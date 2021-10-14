@@ -133,8 +133,17 @@
             $subid = rtrim($subid, ':');
             if ($subid != '') {
                 $data['subid'] = $subid;
-                $data['clickid'] = $subid;
             }
+
+            $utm_medium = '';
+            if(isset($_POST["utm_medium"]) && trim($_POST["utm_medium"]) != '') {
+                $utm_medium = $_POST["utm_medium"];
+            }
+
+            if ($utm_medium != '') {
+                $data['clickid'] = $utm_medium;
+            }
+
             $logInfo = "\r\n";
 			$logInfo .= "Request:\r\n";
 			$logInfo .= print_r($data, true)."\r\n";            
